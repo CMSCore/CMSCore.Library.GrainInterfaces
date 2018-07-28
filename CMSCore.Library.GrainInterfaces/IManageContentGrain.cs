@@ -2,6 +2,9 @@
 {
     using System.Threading.Tasks;
     using CMSCore.Library.Messages;
+    using Messages.Create;
+    using Messages.Read;
+    using Messages.Update;
     using Orleans;
 
     public interface IManageContentGrain : IGrainWithStringKey
