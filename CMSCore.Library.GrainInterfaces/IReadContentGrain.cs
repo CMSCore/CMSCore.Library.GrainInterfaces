@@ -9,12 +9,12 @@
 
     public interface IReadContentGrain : IGrainWithStringKey
     {
-        Task<Immutable<FeedItemViewModel>> GetFeedItem();
-        Task<Immutable<FeedItemViewModel>> GetFeedItemByNormalizedName();
-        Task<Immutable<PageViewModel>> GetPageById();
-        Task<Immutable<PageViewModel>> GetPageByNormalizedName();
-        Task<Immutable<PageTreeViewModel[]>> GetPageTree();
-        Task<Immutable<TagViewModel[]>> GetTags();
-        Task<Immutable<UserViewModel[]>> GetUsers();
+        Task<FeedItemViewModel> GetFeedItem();
+        Task<FeedItemViewModel> GetFeedItemByNormalizedName();
+        Task<PageViewModel> GetPageById();
+        Task<PageViewModel> GetPageByNormalizedName();
+        Task<List<PageTreeViewModel>> GetPageTree();
+        Task<List<TagViewModel>> GetTags();
+        Task<List<UserViewModel>> GetUsers();
     }
 }
